@@ -113,6 +113,28 @@ footer{padding:26px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 .hero.vhero h1{font-size:clamp(40px,4.6vw,66px);max-width:12ch}
 .hero.vhero p{font-size:19px;max-width:44ch;margin:16px 0 24px}
 }
+
+/* about us */
+.about .ab-top{display:grid;gap:36px;grid-template-columns:1fr}
+.about .ab-top p{margin:0 0 14px;color:var(--muted);font-size:18px;max-width:60ch}
+.about .ab-top p strong{color:var(--ink)}
+.ab-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px 26px}
+.ab-card h3{font-size:22px;color:var(--leaf);margin-bottom:12px}
+.ab-card ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ab-card li{padding-left:22px;position:relative;color:var(--ink)}
+.ab-card li::before{content:"✦";position:absolute;left:0;color:var(--gold);font-size:13px;top:3px}
+.about .why{margin-top:44px}
+.about .why h3{display:flex;gap:10px;align-items:baseline}
+.about .why h3 b{color:var(--gold);font-size:.9em}
+.ab-dest{margin-top:44px}
+.ab-dest h3{font-size:22px;color:var(--leaf);margin-bottom:12px}
+.ab-dest div{display:flex;flex-wrap:wrap;gap:10px}
+.ab-dest span{padding:8px 16px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-weight:600;font-size:15px}
+.ab-promise{margin-top:44px;border-radius:20px;padding:34px 28px;background:var(--deep);color:#f3f6f1;text-align:center}
+.ab-promise h3{color:var(--gold);font-size:14px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+.ab-promise p{margin:0 auto;max-width:44ch;font:600 clamp(20px,3vw,28px)/1.3 "Bricolage Grotesque",Figtree,system-ui,sans-serif}
+.ab-promise p+p{margin-top:14px;font-size:16px;font-weight:400;color:#b9cdc1}
+@media (min-width:860px){.about .ab-top{grid-template-columns:1.25fr 1fr;align-items:start}}
 </style>
 </head>
 <body>
@@ -126,7 +148,7 @@ footer{padding:26px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   <div class="vbg" aria-hidden="true"></div>
     <div class="wrap">
     <h1>Where your trips become memorable.</h1>
-    <p>Group, family, corporate and honeymoon tours across Kerala, and short trips to Thailand, Singapore and Malaysia. Planned by a local team in Adimaly, Munnar.</p>
+    <p>Group, family, corporate and honeymoon tours across Kerala. Planned by a local team in Adimaly, Munnar.</p>
     <div class="cta"><a class="btn" href="#packages">Explore packages</a><a class="btn ghost" href="#contact">Get a free quote</a></div>
   </div>
   <div class="vframe">
@@ -140,6 +162,50 @@ footer{padding:26px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   </svg>
 </div>
 <div class="strip" aria-hidden="true"><div id="mq"></div></div>
+
+<section id="about" class="about"><div class="wrap">
+  <h2 class="rv">About us</h2>
+  <p class="lead rv">Where Your Trips Become Memorable...</p>
+  <div class="ab-top">
+    <div class="rv">
+      <p><strong>Welcome to Mistriva Holidays, Kerala’s trusted travel partner for unforgettable journeys.</strong></p>
+      <p>Based in Munnar, Idukki, we are a passionate team of travel lovers who believe that a trip is not just about reaching a destination. It’s about the laughter on the way, the mist on the hills, the stories you bring back, and the memories that stay with you forever.</p>
+      <p>We specialize in crafting customized Kerala tour packages for families, friends, couples, and corporate groups. Whether it’s a relaxing honeymoon in Munnar, an adventurous group trip to Vagamon, a soulful visit to Athirapally waterfalls, or a peaceful houseboat cruise in Alleppey, we plan every detail with care, honesty, and love.</p>
+    </div>
+    <div class="ab-card rv">
+      <h3>What we do</h3>
+      <ul>
+        <li>Customized Kerala Tour Packages</li>
+        <li>Group Tours &amp; College Trips</li>
+        <li>Honeymoon Packages</li>
+        <li>Family Vacations</li>
+        <li>Corporate Outings &amp; Team Trips</li>
+        <li>Resort / Villa / Homestay Bookings</li>
+        <li>Special Private Pool Villas</li>
+        <li>Tempo Traveller &amp; Cab Services</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="rv" style="margin-top:56px;font-size:clamp(26px,4vw,40px)">Why travel with Mistriva?</h2>
+  <div class="why">
+    <div class="rv"><h3><b>1</b>Customized, not copy-paste</h3><p>Every trip is planned according to your budget, group size, and vibe.</p></div>
+    <div class="rv"><h3><b>2</b>Best rates, transparent pricing</h3><p>No hidden charges. Best rates for stays &amp; transport.</p></div>
+    <div class="rv"><h3><b>3</b>Trusted stays</h3><p>We work only with verified resorts, villas, and homestays across Kerala.</p></div>
+    <div class="rv"><h3><b>4</b>End-to-end support</h3><p>From your first call to your safe return home, we are with you.</p></div>
+  </div>
+
+  <div class="ab-dest rv">
+    <h3>Our destinations</h3>
+    <div><span>Munnar</span><span>Vagamon</span><span>Athirapally</span><span>Alleppey</span><span>Wayanad</span><span>Thekkady</span><span>Kovalam</span><span>Kanyakumari</span></div>
+  </div>
+
+  <div class="ab-promise rv">
+    <h3>Our promise</h3>
+    <p>We don’t just arrange trips. We create experiences that you will remember for a lifetime.</p>
+    <p>Because at Mistriva Holidays, Where Your Trips Become Memorable...</p>
+  </div>
+</div></section>
 
 <section id="kerala" class="kerala"><div class="wrap">
   <h2 class="rv">Kerala destinations</h2>
